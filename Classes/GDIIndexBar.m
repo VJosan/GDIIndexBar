@@ -412,6 +412,10 @@ CGPoint CGPointAdd(CGPoint point1, CGPoint point2) {
 }
 
 #pragma mark - Touch Handling
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    NSLog(@"gestureRecognizerShouldBegin");
+}
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
